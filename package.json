@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd server && node server.js && cd ../client && npm start",
-    "build": "cd client && npm install && npm run build && echo /'Build is ready to deploy /' && ls -la"
+    "build": "cd client && npm install && npm run build && cp public ../ && cd ../ && echo /'Build is ready to deploy /' && ls -la"
   },
   "author": "",
   "license": "ISC"
